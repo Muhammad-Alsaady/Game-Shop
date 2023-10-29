@@ -1,0 +1,73 @@
+﻿@model EditGameViewModel
+
+@{
+    ViewData["Title"] = Model.Name;
+}
+
+<h1>Edit @Model.Name Game</h1>
+<hr />
+
+<form asp-action="Edit" method="post" enctype="multipart/form-data">
+    <div class="row">
+        <div class="col-md-6">
+            <input type="hidden" asp-for="GameId" />
+            <input type="hidden" asp-for="CurrentCoverImage" />
+
+            <div class="form-group">
+                <label asp-for="Name" class="form-label mt-4"></label>
+                <input type="text" asp-for="Name" class="form-control " placeholder="Game Name" />
+                <span asp-validation-for="Name" class="text-bg-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="CategoryId" class="form-label mt-4 select2">Example disabled select</label>
+                <select asp-for="CategoryId" asp-items="Model.CategoryList" class="form-select"
+                        data-minimum-results-for-search="Infinity" data-placeholder="Select Categoty">
+                    <option value=""></option>
+                </select>
+                <span asp-validation-for="CategoryId" class="text-bg-danger"></span>
+
+            </div>
+
+            <div class="form-group">
+                <label asp-for="SelectedDevices" class="form-label mt-4 select2 select2-container"></label>
+                <select asp-for="SelectedDevices" asp-items="Model.DeviceList" class="form-select"
+                        data-placeholder="Select Device">
+                </select>
+                <span asp-validation-for="SelectedDevices" class="text-bg-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Description" class="form-label mt-4"></label>
+                <textarea asp-for="Description" class="form-control" placeholder="Game Description" rows="3"></textarea>
+                <span asp-validation-for="Description" class="text-bg-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="CoverImage"></label>
+                <input type="file" asp-for="CoverImage" id="CoverImage" class="form-control mt-4"
+                       data-rule-extension="jpg,png,jpeg" data-msg-extension="Not Allowed Image"
+                       data-rule-filesize="1048576" data-msg-filesize="Image size must be less than or equal to 1MB" />
+
+                <small class="form-text text-muted">jpg, pnj, jpeg images are allowed,</small>
+                <small class="form-text text-muted">Maximum length is 1Mb</small>
+                <span asp-validation-for="CoverImage" class="text-bg-danger d-block"></span>
+            </div>
+
+            <button type="submit" asp-action="Edit" asp-route-id="@Model.GameId" class="btn btn-info mt-4 btn-radius">Save</button>
+            <a class="btn btn-info mt-4 btn-radius" asp-action="Index">Cancel</a>
+
+        </div>
+
+        <div class="col-md-6 d-flex justify-content-center mt-4">
+            <img src=@($"/{Settings.imagePath}/{Model.CurrentCoverImage}") alt="Game Cover Image" id="cover-image" class="image" />
+        </div>
+    </div>
+
+</form>
+
+
+@section Scripts{
+    <partial name="_ValidationScriptsPartial" />
+    <script src="~/js/customscript.js" asp-append-version="true"></script>
+}

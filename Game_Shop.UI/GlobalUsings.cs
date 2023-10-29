@@ -1,0 +1,9 @@
+﻿global using Microsoft.AspNetCore.Identity;
+global using Game_Shop.Database.Data;
+global using Game_Shop.Database.Models;
+global using Game_Shop.UI.ViewModels;
+global using Microsoft.AspNetCore.Mvc.Rendering;
+global using Game_Shop.UI.Services.Repositroy;
+global using Game_Shop.UI.Services.Services;
+global using Microsoft.EntityFrameworkCore;
+global using Game_Shop.UI.Constants;

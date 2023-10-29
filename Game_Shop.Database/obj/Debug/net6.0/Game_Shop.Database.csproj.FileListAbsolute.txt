@@ -1,0 +1,14 @@
+C:\Users\Administrator\source\repos\Game_Shop\Game_Shop.Database\bin\Debug\net6.0\Debug\net6.0\Game_Shop.Database.deps.json
+C:\Users\Administrator\source\repos\Game_Shop\Game_Shop.Database\bin\Debug\net6.0\Debug\net6.0\Game_Shop.Database.runtimeconfig.json
+C:\Users\Administrator\source\repos\Game_Shop\Game_Shop.Database\bin\Debug\net6.0\Debug\net6.0\Game_Shop.Database.dll
+C:\Users\Administrator\source\repos\Game_Shop\Game_Shop.Database\bin\Debug\net6.0\Debug\net6.0\Game_Shop.Database.pdb
+C:\Users\Administrator\source\repos\Game_Shop\Game_Shop.Database\obj\Debug\net6.0\Game_Shop.Database.csproj.AssemblyReference.cache
+C:\Users\Administrator\source\repos\Game_Shop\Game_Shop.Database\obj\Debug\net6.0\Game_Shop.Database.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Administrator\source\repos\Game_Shop\Game_Shop.Database\obj\Debug\net6.0\Game_Shop.Database.AssemblyInfoInputs.cache
+C:\Users\Administrator\source\repos\Game_Shop\Game_Shop.Database\obj\Debug\net6.0\Game_Shop.Database.AssemblyInfo.cs
+C:\Users\Administrator\source\repos\Game_Shop\Game_Shop.Database\obj\Debug\net6.0\Game_Shop.Database.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\source\repos\Game_Shop\Game_Shop.Database\obj\Debug\net6.0\Game_Shop.Database.dll
+C:\Users\Administrator\source\repos\Game_Shop\Game_Shop.Database\obj\Debug\net6.0\refint\Game_Shop.Database.dll
+C:\Users\Administrator\source\repos\Game_Shop\Game_Shop.Database\obj\Debug\net6.0\Game_Shop.Database.pdb
+C:\Users\Administrator\source\repos\Game_Shop\Game_Shop.Database\obj\Debug\net6.0\Game_Shop.Database.genruntimeconfig.cache
+C:\Users\Administrator\source\repos\Game_Shop\Game_Shop.Database\obj\Debug\net6.0\ref\Game_Shop.Database.dll
